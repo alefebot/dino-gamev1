@@ -136,7 +136,7 @@ body {
 
 #gameOver {
     display: none;
-    font-size: 70px;
+    font-size: 50px;
     position: absolute;
     left: calc(50% - 181px);
     top: calc(50% - 40px);
@@ -144,3 +144,29 @@ body {
     height: 80px;
     color: #525252;
 }
+
+/*/  Responsivo /*/
+
+@media (max-width: 700px){
+    .body{
+        height: 100%;
+    }
+    #container{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+    #gameOver{
+        font-size: 40px;
+    }
+    #container #cloud {
+        height: 100%;
+        width: 100%;
+    }
+    #container #road {
+        height: 30px;
+        width: 100%;
+    }
+}
+
